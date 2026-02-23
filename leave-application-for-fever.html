@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Leave Application for Fever</title>
+<meta name="description" content="Leave application for fever for school students. Copy ready format.">
+</head>
+
+<body>
+
+<h1>Leave Application for Fever</h1>
+
+<button onclick="copyText()">Copy Application</button>
+
+<pre id="appText">
+To,
+The Principal
+[School Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Leave Application due to Fever
+
+Respected Sir/Madam,
+
+I respectfully state that I am suffering from fever and unable to attend school.
+
+Therefore, kindly grant me leave from ___ to ___.
+
+I shall be grateful to you.
+
+Thank you.
+
+Yours faithfully,
+[Student Name]
+Class: ___
+Section: ___
+Roll No: ___
+</pre>
+
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+function copyText() {
+  const text = document.getElementById("appText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Application copied!");
+}
+</script>
+
+</body>
+</html>
