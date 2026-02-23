@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Application for Bonafide Certificate</title>
+<meta name="description" content="Bonafide certificate application format for school students. Copy and use.">
+</head>
+
+<body>
+
+<h1>Application for Bonafide Certificate</h1>
+
+<button onclick="copyText()">Copy Application</button>
+
+<pre id="appText">
+To,
+The Principal
+[School Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Application for Bonafide Certificate
+
+Respected Sir/Madam,
+
+I am a student of Class ___ in your school.
+I require a bonafide certificate for official purpose.
+
+Kindly issue my bonafide certificate at the earliest.
+
+Thank you.
+
+Yours faithfully,
+[Student Name]
+Class: ___
+Section: ___
+Roll No: ___
+</pre>
+
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+function copyText() {
+  const text = document.getElementById("appText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Application copied!");
+}
+</script>
+
+</body>
+</html>
