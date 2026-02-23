@@ -8,9 +8,9 @@
 
 <h1>Application for School Leaving Certificate</h1>
 
-<h2>Copy Application</h2>
+<button onclick="copyText()">Copy Application</button>
 
-<pre>
+<pre id="appText">
 To,
 The Principal
 [School Name]
@@ -41,6 +41,14 @@ Roll No: ___
 </pre>
 
 <p><a href="index.html">Back to Home</a></p>
+
+<script>
+function copyText() {
+  const text = document.getElementById("appText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Application copied!");
+}
+</script>
 
 </body>
 </html>
