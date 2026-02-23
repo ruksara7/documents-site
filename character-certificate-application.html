@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Application for Character Certificate</title>
+<meta name="description" content="Character certificate application format for students. Copy and use simple format.">
+</head>
+
+<body>
+
+<h1>Application for Character Certificate</h1>
+
+<button onclick="copyText()">Copy Application</button>
+
+<pre id="appText">
+To,
+The Principal
+[School Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Application for Character Certificate
+
+Respected Sir/Madam,
+
+I have been a student of your school.
+I need a character certificate for further admission.
+
+Kindly issue my character certificate.
+
+Thank you.
+
+Yours faithfully,
+[Student Name]
+Class: ___
+Section: ___
+Roll No: ___
+</pre>
+
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+function copyText() {
+  const text = document.getElementById("appText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Application copied!");
+}
+</script>
+
+</body>
+</html>
