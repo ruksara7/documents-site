@@ -1,16 +1,18 @@
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Application for School Leaving Certificate</title>
 <meta name="description" content="School leaving certificate application format for students. Copy and use simple format.">
 </head>
 
 <body>
 
-<h1>Application for School Leaving Certificate</h1> 
+<h1>Application for School Leaving Certificate</h1>
 
-<button onclick="copyText()">Copy Application</button>
+<h2>English Student Format</h2>
+<button onclick="copyEnglish()">Copy English</button>
 
-<pre id="appText">
+<pre id="englishText">
 To,
 The Principal
 [School Name]
@@ -25,28 +27,75 @@ Respected Sir/Madam,
 I respectfully state that I am a student of your school.
 Due to personal reasons, I will not be able to continue my studies in this school.
 
-Therefore, I kindly request you to issue my School Leaving Certificate.
-
-I have cleared all dues from the school.
-
-Kindly do the needful.
+Kindly issue my School Leaving Certificate.
 
 Thank you.
 
 Yours faithfully,
 [Student Name]
-Class: ___
-Section: ___
-Roll No: ___
+Class:
+Roll No:
+</pre>
+
+<hr>
+
+<h2>Hindi Parent Application (TC & Marksheet)</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<pre id="hindiText">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[पूरा पता]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: विद्यालय त्याग प्रमाणपत्र (TC) एवं अंकतालिका प्रदान करने हेतु आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मेरा पुत्र/पुत्री नीचे दिए विवरणानुसार आपके विद्यालय में अध्ययनरत था/थी:
+
+विद्यार्थी का नाम : ______________________
+कक्षा : _______   अनुभाग : _______
+रोल नंबर : _______   प्रवेश संख्या : _______
+जन्म तिथि : ___ / ___ / ______
+
+अब हमें निम्न कारण से विद्यालय छोड़ना पड़ रहा है (उचित पर ✓ लगाएं):
+
+[ ] स्थान परिवर्तन
+[ ] अन्य विद्यालय में प्रवेश
+[ ] पारिवारिक कारण
+[ ] स्वास्थ्य कारण
+[ ] अन्य: ______________________
+
+अतः आपसे निवेदन है कि कृपया इसका विद्यालय त्याग प्रमाणपत्र (Transfer Certificate)
+तथा नवीनतम अंकतालिका जारी करने की कृपा करें।
+
+मैं घोषित करता/करती हूँ कि विद्यालय की समस्त फीस जमा कर दी गई है।
+
+धन्यवाद।
+
+भवदीय
+अभिभावक का नाम : ______________________
+मोबाइल नंबर : ______________________
+पता : __________________________________________
+हस्ताक्षर : ______________________
 </pre>
 
 <p><a href="index.html">Back to Home</a></p>
 
 <script>
-function copyText() {
-  const text = document.getElementById("appText").innerText;
+function copyEnglish() {
+  const text = document.getElementById("englishText").innerText;
   navigator.clipboard.writeText(text);
-  alert("Application copied!");
+  alert("English application copied");
+}
+
+function copyHindi() {
+  const text = document.getElementById("hindiText").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Hindi application copied");
 }
 </script>
 
