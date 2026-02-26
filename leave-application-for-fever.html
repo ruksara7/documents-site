@@ -1,16 +1,76 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Leave Application for Fever</title>
 <meta name="description" content="Leave application for fever for school students. Copy ready format.">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.application{
+    background:white;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    white-space:pre-wrap;
+    line-height:1.7;
+    font-size:15px;
+    overflow-wrap:break-word;
+}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+@media(max-width:600px){
+    h1{font-size:20px;}
+    .application{font-size:14px;}
+}
+</style>
 </head>
 
 <body>
+
+<div class="container">
 
 <h1>Leave Application for Fever</h1>
 
 <button onclick="copyText()">Copy Application</button>
 
-<pre id="appText">
+<div id="appText" class="application">
 To,
 The Principal
 [School Name]
@@ -35,14 +95,15 @@ Yours faithfully,
 Class: ___
 Section: ___
 Roll No: ___
-</pre>
+</div>
 
-<p><a href="index.html">Back to Home</a></p>
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
 
 <script>
-function copyText() {
-  const text = document.getElementById("appText").innerText;
-  navigator.clipboard.writeText(text);
+function copyText(){
+  navigator.clipboard.writeText(document.getElementById("appText").innerText);
   alert("Application copied!");
 }
 </script>
