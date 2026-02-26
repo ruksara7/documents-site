@@ -1,16 +1,85 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Application for Character Certificate</title>
-<meta name="description" content="Character certificate application format for students. Copy and use simple format.">
+<meta name="description" content="Character certificate application format in English and Hindi for students. Copy ready format.">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{text-align:center;}
+
+.section{margin-top:25px;}
+
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.application{
+    background:white;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    white-space:pre-wrap;
+    line-height:1.7;
+    font-size:15px;
+    overflow-wrap:break-word;
+}
+
+hr{
+    margin:35px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+@media(max-width:600px){
+    h1{font-size:20px;}
+    h2{font-size:17px;}
+    .application{font-size:14px;}
+}
+</style>
 </head>
 
 <body>
+<div class="container">
 
 <h1>Application for Character Certificate</h1>
 
-<button onclick="copyText()">Copy Application</button>
+<div class="section">
+<h2>English Format</h2>
+<button onclick="copyEnglish()">Copy English</button>
 
-<pre id="appText">
+<div id="englishText" class="application">
 To,
 The Principal
 [School Name]
@@ -34,15 +103,55 @@ Yours faithfully,
 Class: ___
 Section: ___
 Roll No: ___
-</pre>
+</div>
+</div>
 
-<p><a href="index.html">Back to Home</a></p>
+<hr>
+
+<div class="section">
+<h2>Hindi Format</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[शहर]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: चरित्र प्रमाणपत्र हेतु आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मैं आपके विद्यालय का विद्यार्थी रहा/रही हूँ।
+मुझे आगे प्रवेश हेतु चरित्र प्रमाणपत्र की आवश्यकता है।
+
+अतः कृपया मेरा चरित्र प्रमाणपत्र जारी करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय
+[विद्यार्थी का नाम]
+कक्षा: ___
+अनुभाग: ___
+रोल नंबर: ___
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
 
 <script>
-function copyText() {
-  const text = document.getElementById("appText").innerText;
-  navigator.clipboard.writeText(text);
-  alert("Application copied!");
+function copyEnglish(){
+ navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+ alert("English application copied");
+}
+
+function copyHindi(){
+ navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+ alert("Hindi application copied");
 }
 </script>
 
