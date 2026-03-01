@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Late Coming Application</title>
+<meta name="description" content="Late coming apology application for teachers in English and Hindi. Copy ready format.">
+
+<style>
+body{font-family: Arial, sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+button{width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;}
+.application{background:white;padding:18px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);white-space:pre-wrap;line-height:1.7;font-size:15px;overflow-wrap:break-word;}
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+@media(max-width:600px){h1{font-size:20px;}h2{font-size:17px;}.application{font-size:14px;}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Teacher Late Coming Application</h1>
+
+<div class="section">
+<h2>English Format</h2>
+<button onclick="copyEnglish()">Copy English</button>
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+[School Address]
+
+Subject: Apology for Late Arrival
+
+Respected Sir/Madam,
+
+I sincerely apologize for arriving late to school on [Date] due to [Reason]. The delay was unavoidable, and I regret the inconvenience caused to the school schedule.
+
+I assure you that I will take necessary precautions to ensure punctuality and prevent such occurrences in the future.
+
+Kindly consider my explanation and oblige.
+
+Thank you.
+
+Yours faithfully,
+[Teacher Name]
+[Designation / Subject]
+[Employee ID]
+[Contact Number]
+[Date]
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Format</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[विद्यालय का पता]
+
+विषय: विलंब से आने हेतु क्षमायाचना आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मैं दिनांक [Date] को [Reason] के कारण विद्यालय समय पर उपस्थित नहीं हो सका/सकी। इस विलंब से हुई असुविधा के लिए मैं क्षमा प्रार्थी हूँ।
+
+मैं भविष्य में समयपालन सुनिश्चित करने का पूरा प्रयास करूँगा/करूँगी ताकि ऐसी स्थिति पुनः उत्पन्न न हो।
+
+कृपया मेरे स्पष्टीकरण को स्वीकार करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय,
+[शिक्षक का नाम]
+[पद / विषय]
+[कर्मचारी आईडी]
+[मोबाइल नंबर]
+[दिनांक]
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){navigator.clipboard.writeText(document.getElementById("englishText").innerText);alert("English application copied");}
+function copyHindi(){navigator.clipboard.writeText(document.getElementById("hindiText").innerText);alert("Hindi application copied");}
+</script>
+
+</body>
+</html>
