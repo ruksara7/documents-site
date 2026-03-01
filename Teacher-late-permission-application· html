@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Late Arrival Permission Application</title>
+<meta name="description" content="Prior permission for late arrival application for teachers in English and Hindi. Copy ready format.">
+<style>
+body{font-family:Arial, sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+button{width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;}
+.application{background:white;padding:18px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);white-space:pre-wrap;line-height:1.7;font-size:15px;overflow-wrap:break-word;}
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+@media(max-width:600px){h1{font-size:20px;}h2{font-size:17px;}.application{font-size:14px;}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Teacher Late Arrival Permission</h1>
+<div class="section">
+<h2>English Format</h2>
+<button onclick="copyEnglish()">Copy English</button>
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+[School Address]
+
+Subject: Permission for Late Arrival
+
+Respected Sir/Madam,
+
+I respectfully request permission to arrive late to school on [Date] due to [Reason]. I will be able to attend duties at approximately [Time].
+
+I will manage my classes accordingly and ensure no disruption in academic work.
+
+Kindly grant permission for late arrival on the mentioned date.
+
+Thank you.
+
+Yours faithfully,
+[Teacher Name]
+[Designation / Subject]
+[Employee ID]
+[Contact Number]
+[Date]
+</div>
+</div>
+<hr>
+<div class="section">
+<h2>Hindi Format</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[विद्यालय का पता]
+
+विषय: विलंब से आने की पूर्व अनुमति हेतु आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मुझे दिनांक [Date] को [Reason] के कारण विद्यालय में लगभग [Time] बजे उपस्थित होना संभव होगा।
+
+मैं कक्षाओं का समुचित प्रबंध कर दूँगा/दूँगी ताकि शैक्षणिक कार्य प्रभावित न हो।
+
+अतः आपसे निवेदन है कि कृपया उक्त दिनांक के लिए विलंब से आने की अनुमति प्रदान करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय,
+[शिक्षक का नाम]
+[पद / विषय]
+[कर्मचारी आईडी]
+[मोबाइल नंबर]
+[दिनांक]
+</div>
+</div>
+<a class="back" href="index.html">← Back to Home</a>
+</div>
+<script>
+function copyEnglish(){navigator.clipboard.writeText(document.getElementById('englishText').innerText);alert('English application copied');}
+function copyHindi(){navigator.clipboard.writeText(document.getElementById('hindiText').innerText);alert('Hindi application copied');}
+</script>
+</body>
+</html>
