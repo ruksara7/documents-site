@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Application for Experience Certificate</title>
-<meta name="description" content="Request letter for experience certificate from school, company or internship. English and Hindi formats with examples and FAQs.">
+<title>Bonafide Certificate Application</title>
+<meta name="description" content="Application for bonafide certificate for school and college students. English and Hindi formats, purposes, documents and FAQs.">
 
 <style>
 body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
@@ -38,10 +38,10 @@ h2{font-size:17px;}
 
 <div class="container">
 
-<h1>Application for Experience Certificate</h1>
+<h1>Bonafide Certificate Application</h1>
 
 <div class="application">
-An experience certificate confirms that a person worked or studied in an institution for a specific period. It is required for job applications, college admission, and internships.
+A bonafide certificate confirms that a student is currently studying in an institution. It is commonly required for scholarships, bank account opening, SIM verification, hostel admission, and government forms.
 </div>
 
 <hr>
@@ -51,24 +51,26 @@ An experience certificate confirms that a person worked or studied in an institu
 <button onclick="copyEnglish()">Copy English</button>
 <div id="englishText" class="application">
 To,
-The Principal / Manager
-[Organization Name]
+The Principal
+[School/College Name]
 
 Date: ___ / ___ / 20__
 
-Subject: Request for Experience Certificate
+Subject: Application for Bonafide Certificate
 
 Respected Sir/Madam,
 
-I worked/studied in your institution as ______ from ______ to ______.
+I am a student of class/course ______ in your institution.
 
-I kindly request you to issue my experience certificate as it is required for future opportunities.
+I require a bonafide certificate for [mention purpose – scholarship/bank/hostel/government form].
+
+Kindly issue the certificate at the earliest.
 
 Thank you.
 
 Name:
-Department/Class:
-Contact Number:
+Class/Course:
+Roll No:
 </div>
 </div>
 
@@ -79,37 +81,54 @@ Contact Number:
 <button onclick="copyHindi()">Copy Hindi</button>
 <div id="hindiText" class="application">
 सेवा में,
-प्रधानाचार्य/प्रबंधक
-[संस्थान का नाम]
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय/कॉलेज का नाम]
 
 दिनांक: ___ / ___ / 20__
 
-विषय: अनुभव प्रमाणपत्र हेतु आवेदन
+विषय: बोनाफाइड प्रमाणपत्र हेतु आवेदन
 
 महोदय/महोदया,
 
-मैंने आपके संस्थान में ______ से ______ तक कार्य/अध्ययन किया है।
+मैं आपके संस्थान की कक्षा/कोर्स ______ का छात्र/छात्रा हूँ।
 
-अतः कृपया मेरा अनुभव प्रमाणपत्र जारी करने की कृपा करें।
+मुझे [उद्देश्य लिखें – छात्रवृत्ति/बैंक/होस्टल/सरकारी कार्य] हेतु बोनाफाइड प्रमाणपत्र की आवश्यकता है।
+
+कृपया प्रमाणपत्र जारी करने की कृपा करें।
 
 धन्यवाद।
 
 नाम:
-विभाग/कक्षा:
-मोबाइल नंबर:
+कक्षा/कोर्स:
+रोल नंबर:
 </div>
 </div>
 
 <hr>
 
 <div class="section">
-<h2>Common Uses</h2>
-<button onclick="copyExamples()">Copy Uses</button>
+<h2>Common Purposes</h2>
+<button onclick="copyExamples()">Copy Purposes</button>
 <div id="examples" class="application">
-Job application
-College admission
-Internship proof
-Government verification
+Scholarship application
+Bank account opening
+SIM card verification
+Hostel admission
+Government form submission
+Internship verification
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Documents Required</h2>
+<button onclick="copyDocuments()">Copy Documents</button>
+<div id="documents" class="application">
+School ID card
+Fee receipt
+Aadhar card copy
+Application form
 </div>
 </div>
 
@@ -119,14 +138,14 @@ Government verification
 <h2>FAQ</h2>
 <button onclick="copyFAQ()">Copy FAQ</button>
 <div id="faq" class="application">
-When is it issued?
-After leaving institution.
-
-Is it mandatory?
-Many employers require it.
-
 How long does it take?
-Usually 2–5 working days.
+Usually same day or 1–3 working days.
+
+Is fee required?
+Some institutions charge small fee.
+
+Can parents apply?
+Yes for minor students.
 </div>
 </div>
 
@@ -138,6 +157,7 @@ Usually 2–5 working days.
 function copyEnglish(){navigator.clipboard.writeText(document.getElementById("englishText").innerText);alert("English copied");}
 function copyHindi(){navigator.clipboard.writeText(document.getElementById("hindiText").innerText);alert("Hindi copied");}
 function copyExamples(){navigator.clipboard.writeText(document.getElementById("examples").innerText);alert("Copied");}
+function copyDocuments(){navigator.clipboard.writeText(document.getElementById("documents").innerText);alert("Copied");}
 function copyFAQ(){navigator.clipboard.writeText(document.getElementById("faq").innerText);alert("Copied");}
 </script>
 
