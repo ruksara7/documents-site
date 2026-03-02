@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application for Transfer Certificate by Parents</title>
+<meta name="description" content="Parents application for transfer certificate (TC) from school with English & Hindi formats, examples, reasons, documents and FAQs.">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;
+}
+
+.application{
+background:white;padding:18px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;line-height:1.7;font-size:15px;overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application for Transfer Certificate by Parents</h1>
+
+<div class="application">
+A transfer certificate (TC) is required when a student changes school due to relocation, admission to another school, or personal reasons. Parents write this request to obtain the TC and marksheet after clearing dues.
+
+Schools normally issue the transfer certificate within 2 to 7 working days after verification and fee clearance.
+</div>
+
+<hr>
+
+<div class="section">
+<h2>English Parent Application</h2>
+<button onclick="copyEnglish()">Copy English</button>
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Application for Transfer Certificate
+
+Respected Sir/Madam,
+
+I am the parent of [Student Name], studying in class ______ of your school.
+
+Due to [mention reason — shifting to another city / admission in another school / personal reasons], we are unable to continue studies in your institution.
+
+Therefore, I kindly request you to issue the Transfer Certificate and latest marksheet.
+
+All school dues have been cleared.
+
+Thank you.
+
+Sincerely,
+Parent/Guardian Name:
+Mobile Number:
+Student Name:
+Class:
+Roll No:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Parent Application</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[शहर]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: स्थानांतरण प्रमाणपत्र (TC) हेतु आवेदन
+
+महोदय/महोदया,
+
+मेरा पुत्र/पुत्री [विद्यार्थी का नाम] आपकी विद्यालय की कक्षा ______ में अध्ययनरत है।
+
+[स्थान परिवर्तन / अन्य विद्यालय में प्रवेश / व्यक्तिगत कारण] के कारण हमें विद्यालय बदलना पड़ रहा है।
+
+अतः आपसे निवेदन है कि कृपया स्थानांतरण प्रमाणपत्र तथा नवीनतम अंकतालिका प्रदान करने की कृपा करें।
+
+विद्यालय की समस्त फीस जमा कर दी गई है।
+
+धन्यवाद।
+
+भवदीय
+अभिभावक का नाम:
+मोबाइल नंबर:
+विद्यार्थी का नाम:
+कक्षा:
+रोल नंबर:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Example Reasons</h2>
+<button onclick="copyExamples()">Copy Examples</button>
+<div id="examples" class="application">
+Shifting to Delhi due to father's job transfer
+Admission secured in another CBSE school
+Family relocation to native village
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Replace Before Submitting</h2>
+<div class="application">
+School Name
+Student Name
+Class
+Roll Number
+Reason
+Parent Name
+Contact Number
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Documents Schools May Ask</h2>
+<button onclick="copyDocuments()">Copy Documents</button>
+<div id="documents" class="application">
+Fee clearance receipt
+Library clearance
+ID card return
+Signed parent request
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>FAQ</h2>
+<button onclick="copyFAQ()">Copy FAQ</button>
+<div id="faq" class="application">
+Who can request TC?
+Parent or legal guardian.
+
+Can school refuse TC?
+Only if dues are pending.
+
+How long does it take?
+Usually 2–7 working days.
+
+Is marksheet given with TC?
+Yes, most schools provide latest marksheet.
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Related Applications</h2>
+<div class="application">
+See also:
+Bonafide Certificate Application
+School Leaving Certificate Application
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("English copied");
+}
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Hindi copied");
+}
+function copyExamples(){
+navigator.clipboard.writeText(document.getElementById("examples").innerText);
+alert("Examples copied");
+}
+function copyDocuments(){
+navigator.clipboard.writeText(document.getElementById("documents").innerText);
+alert("Documents copied");
+}
+function copyFAQ(){
+navigator.clipboard.writeText(document.getElementById("faq").innerText);
+alert("FAQ copied");
+}
+</script>
+
+</body>
+</html>
