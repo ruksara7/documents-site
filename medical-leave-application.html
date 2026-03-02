@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Medical Leave Application for School</title>
+<meta name="description" content="Medical leave application for students. English and Hindi formats, hospital leave, surgery leave examples and FAQs.">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;
+}
+
+.application{
+background:white;padding:18px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;line-height:1.7;font-size:15px;overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Medical Leave Application</h1>
+
+<div class="application">
+A medical leave application is written when a student cannot attend school due to serious illness, hospital treatment, surgery, or doctor-advised rest for multiple days.
+</div>
+
+<hr>
+
+<div class="section">
+<h2>English Medical Leave</h2>
+<button onclick="copyEnglish()">Copy English</button>
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Medical Leave Application
+
+Respected Sir/Madam,
+
+I want to inform you that I am suffering from a medical condition and doctor has advised rest.
+
+Therefore, I will not be able to attend school from ___ to ___.
+
+Kindly grant me medical leave.
+
+Thank you.
+
+Student Name:
+Class:
+Roll No:
+Parent Signature:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Medical Leave</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: चिकित्सीय अवकाश हेतु आवेदन
+
+महोदय/महोदया,
+
+मैं बीमारी के कारण विद्यालय आने में असमर्थ हूँ तथा डॉक्टर ने आराम करने की सलाह दी है।
+
+अतः कृपया दिनांक ___ से ___ तक अवकाश प्रदान करने की कृपा करें।
+
+धन्यवाद।
+
+नाम:
+कक्षा:
+रोल नंबर:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Example Medical Situations</h2>
+<button onclick="copyExamples()">Copy Examples</button>
+<div id="examples" class="application">
+Hospital admission
+Surgery recovery
+Fracture
+Severe infection
+Doctor advised bed rest
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>FAQ</h2>
+<button onclick="copyFAQ()">Copy FAQ</button>
+<div id="faq" class="application">
+Is medical certificate required?
+Usually required for leave longer than 3–5 days.
+
+Can exams be rescheduled?
+Depends on school policy.
+
+Can parent submit application?
+Yes, for minors parents submit.
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){navigator.clipboard.writeText(document.getElementById("englishText").innerText);alert("English copied");}
+function copyHindi(){navigator.clipboard.writeText(document.getElementById("hindiText").innerText);alert("Hindi copied");}
+function copyExamples(){navigator.clipboard.writeText(document.getElementById("examples").innerText);alert("Examples copied");}
+function copyFAQ(){navigator.clipboard.writeText(document.getElementById("faq").innerText);alert("FAQ copied");}
+</script>
+
+</body>
+</html>
