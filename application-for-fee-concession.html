@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application for Fee Concession</title>
+<meta name="description" content="Application for fee concession in school or college. English and Hindi formats, reasons, documents and FAQs.">
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:8px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.application{
+    background:white;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    white-space:pre-wrap;
+    line-height:1.7;
+    font-size:15px;
+    overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+@media(max-width:600px){
+    h1{font-size:20px;}
+    h2{font-size:17px;}
+    .application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application for Fee Concession</h1>
+
+<div class="application">
+A fee concession application is written when a student cannot pay full school fees due to financial hardship. Schools may grant partial or full concession after verifying the reason such as low income, medical expenses, job loss, or temporary financial problems.
+</div>
+
+<hr>
+
+<div class="section">
+<h2>English Application</h2>
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+To,
+The Principal
+[School/College Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Application for Fee Concession
+
+Respected Sir/Madam,
+
+I am a student of class ______ studying in your institution.
+
+Due to [mention the financial reason — low income / medical expenses / job loss / financial crisis], my family is unable to pay the full school fees.
+
+Therefore, I kindly request you to grant me a concession in fees for the academic session ______ so that I can continue my education without interruption.
+
+I shall be very grateful for your support.
+
+Yours obediently,
+[Student Name]
+Class:
+Roll No:
+Parent/Guardian Name:
+Mobile Number:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Application</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+[शहर]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: शुल्क में छूट हेतु आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मैं आपके विद्यालय की कक्षा ______ का छात्र/छात्रा हूँ।
+
+[यहाँ आर्थिक कारण लिखें — कम आय / बीमारी का खर्च / नौकरी छूटना / आर्थिक कठिनाई] के कारण हम विद्यालय की पूरी फीस जमा करने में असमर्थ हैं।
+
+अतः आपसे निवेदन है कि कृपया चालू शैक्षणिक सत्र ______ के लिए शुल्क में छूट प्रदान करने की कृपा करें ताकि मेरी पढ़ाई जारी रह सके।
+
+भवदीय
+[नाम]
+कक्षा:
+रोल नंबर:
+मोबाइल नंबर:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Replace Before Submitting</h2>
+<div class="application">
+School Name  
+Class  
+Academic Session  
+Reason  
+Student Name  
+Parent Name  
+Contact Number
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Common Reasons</h2>
+<div class="application">
+Low family income
+Father lost job
+Medical treatment expenses
+Single parent income
+Business or crop loss
+Temporary financial crisis
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Documents Schools May Ask</h2>
+<div class="application">
+Income certificate
+Salary slip
+Medical bills
+Affidavit / declaration
+Previous fee receipt
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>FAQ</h2>
+<div class="application">
+Who can apply?
+Any student facing genuine financial difficulty.
+
+Can school reject it?
+Yes, approval depends on school verification and rules.
+
+Is full waiver possible?
+Some schools give partial, some full concession.
+
+Approval time?
+Usually 3–10 working days.
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("English copied");
+}
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Hindi copied");
+}
+</script>
+
+</body>
+</html>
