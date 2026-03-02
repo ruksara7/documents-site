@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sick Leave Application by Parents</title>
+<meta name="description" content="Sick leave application written by parents for school. English and Hindi formats, reasons, examples and FAQs.">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;
+}
+
+.application{
+background:white;padding:18px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;line-height:1.7;font-size:15px;overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Sick Leave Application by Parents</h1>
+
+<div class="application">
+Parents write a sick leave application when a child cannot attend school due to illness such as fever, cold, infection, or medical treatment. Schools require written information for attendance records.
+</div>
+
+<hr>
+
+<div class="section">
+<h2>English Application</h2>
+<button onclick="copyEnglish()">Copy English</button>
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+[City]
+
+Date: ___ / ___ / 20__
+
+Subject: Sick Leave Application
+
+Respected Sir/Madam,
+
+My child [Student Name], studying in class ______, is suffering from illness and is unable to attend school.
+
+Kindly grant leave from ___ to ___.
+
+I assure you the student will attend school after recovery.
+
+Thank you.
+
+Parent Name:
+Signature:
+Contact Number:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Application</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: बीमारी के कारण अवकाश हेतु आवेदन
+
+महोदय/महोदया,
+
+मेरा पुत्र/पुत्री [नाम] कक्षा ______ का छात्र/छात्रा है और बीमारी के कारण विद्यालय आने में असमर्थ है।
+
+कृपया दिनांक ___ से ___ तक अवकाश प्रदान करने की कृपा करें।
+
+धन्यवाद।
+
+अभिभावक का नाम:
+मोबाइल नंबर:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Example Reasons</h2>
+<button onclick="copyExamples()">Copy Examples</button>
+<div id="examples" class="application">
+Fever
+Viral infection
+Doctor advised rest
+Food poisoning
+Eye infection
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>FAQ</h2>
+<button onclick="copyFAQ()">Copy FAQ</button>
+<div id="faq" class="application">
+Is medical certificate required?
+Sometimes for leave more than 3 days.
+
+Can WhatsApp message work?
+Some schools accept but written application preferred.
+
+Can parents sign?
+Yes, parents usually sign for minors.
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){navigator.clipboard.writeText(document.getElementById("englishText").innerText);alert("English copied");}
+function copyHindi(){navigator.clipboard.writeText(document.getElementById("hindiText").innerText);alert("Hindi copied");}
+function copyExamples(){navigator.clipboard.writeText(document.getElementById("examples").innerText);alert("Examples copied");}
+function copyFAQ(){navigator.clipboard.writeText(document.getElementById("faq").innerText);alert("FAQ copied");}
+</script>
+
+</body>
+</html>
