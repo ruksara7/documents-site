@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Property NOC Letter Format (Society NOC & Owner NOC)</title>
+
+<meta name="description" content="Property NOC letter format for society approval, property sale or property permission. Copy ready formats in Hindi and English.">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.7;
+}
+
+.container{
+max-width:850px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.section{
+margin-top:30px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:12px;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+font-size:15px;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Property NOC Letter Format</h1>
+
+<div class="application">
+
+A Property No Objection Certificate (NOC) confirms that a housing society, authority, or property owner has no objection regarding property sale, transfer, or usage.  
+It is commonly required during property transactions, society approvals, and legal documentation.
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Society NOC for Property Sale (Hindi)</h2>
+
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+
+सेवा में  
+सचिव  
+________ हाउसिंग सोसाइटी
+
+विषय: संपत्ति बिक्री हेतु अनापत्ति प्रमाण पत्र
+
+महोदय,
+
+यह प्रमाणित किया जाता है कि फ्लैट नंबर ______, जो ______ (मालिक का नाम) के नाम पर पंजीकृत है, के संबंध में सोसाइटी को किसी प्रकार की आपत्ति नहीं है।
+
+सोसाइटी की ओर से उक्त संपत्ति की बिक्री / हस्तांतरण के लिए अनापत्ति प्रमाण पत्र जारी किया जाता है।
+
+दिनांक: ___ / ___ / 20__
+
+सचिव  
+________ हाउसिंग सोसाइटी  
+हस्ताक्षर: ______  
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Owner NOC for Property Permission (English)</h2>
+
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+
+To  
+Concerned Authority
+
+Subject: No Objection Certificate for Property
+
+I, ______ owner of property located at ______ hereby declare that I have no objection regarding the use/transfer of the above mentioned property.
+
+This certificate is issued upon request for official purposes.
+
+Date: ___ / ___ / 20__
+
+Owner Name: ______  
+Address: ______  
+Signature: ______  
+
+</div>
+
+</div>
+
+<a class="back" href="noc-letter-format.html">← Back to NOC Formats</a>
+
+</div>
+
+<script>
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Copied");
+}
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("Copied");
+}
+
+</script>
+
+</body>
+</html>
