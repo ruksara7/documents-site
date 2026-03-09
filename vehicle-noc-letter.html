@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vehicle NOC Letter Format for RTO (Hindi & English)</title>
+
+<meta name="description" content="Vehicle NOC letter format for RTO vehicle transfer or interstate transfer. Copy ready application in Hindi and English.">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.7;
+}
+
+.container{
+max-width:850px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.section{
+margin-top:30px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:12px;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+font-size:15px;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Vehicle NOC Letter Format</h1>
+
+<div class="application">
+
+A Vehicle No Objection Certificate (NOC) is issued by the Regional Transport Office (RTO) when a vehicle owner wants to transfer the vehicle to another state or sell it to another person.
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Application to RTO for Vehicle NOC (Hindi)</h2>
+
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+
+सेवा में  
+क्षेत्रीय परिवहन अधिकारी  
+________ RTO कार्यालय
+
+विषय: वाहन NOC जारी करने हेतु आवेदन
+
+महोदय,
+
+सविनय निवेदन है कि मेरा वाहन ______ (वाहन नंबर) आपके कार्यालय में पंजीकृत है।
+
+मैं इस वाहन को ______ (अन्य राज्य / अन्य व्यक्ति) को स्थानांतरित करना चाहता/चाहती हूँ। अतः कृपया मेरे वाहन के लिए अनापत्ति प्रमाण पत्र (NOC) जारी करने की कृपा करें।
+
+संलग्न दस्तावेज:
+
+1. वाहन पंजीकरण प्रमाण पत्र (RC)  
+2. पहचान प्रमाण  
+3. पता प्रमाण  
+
+दिनांक: ___ / ___ / 20__
+
+नाम: ______  
+पता: ______  
+हस्ताक्षर: ______  
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Vehicle Owner NOC for Transfer (English)</h2>
+
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+
+To  
+The Regional Transport Officer  
+________ RTO Office
+
+Subject: Request for Vehicle NOC
+
+Respected Sir/Madam,
+
+I am the registered owner of vehicle number ______ registered at your RTO.
+
+I request you to kindly issue a No Objection Certificate for the above vehicle as I intend to transfer it to ______.
+
+The necessary documents are enclosed for your verification.
+
+Date: ___ / ___ / 20__
+
+Name: ______  
+Address: ______  
+Signature: ______  
+
+</div>
+
+</div>
+
+<a class="back" href="noc-letter-format.html">← Back to NOC Formats</a>
+
+</div>
+
+<script>
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Copied");
+}
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("Copied");
+}
+
+</script>
+
+</body>
+</html>
