@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Affidavit for Lost Documents Format (Hindi & English)</title>
+
+<meta name="description" content="Affidavit for lost documents format for marksheet, ID card, certificate or other documents. Copy ready affidavit format in Hindi and English.">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.7;
+}
+
+.container{
+max-width:850px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.section{
+margin-top:30px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:12px;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+font-size:15px;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Affidavit for Lost Documents</h1>
+
+<div class="application">
+
+An affidavit for lost documents is a sworn statement declaring that a document such as a marksheet, certificate, ID card or other official document has been lost and the information provided is true.
+
+This affidavit is usually submitted when applying for a duplicate document.
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Hindi Affidavit</h2>
+
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+
+शपथ पत्र
+
+मैं ______ पुत्र/पुत्री ______ निवासी ______ यह शपथपूर्वक घोषणा करता/करती हूँ कि मेरा ______ (दस्तावेज़ का नाम) दिनांक ______ को कहीं खो गया है।
+
+मैंने इस दस्तावेज़ को ढूंढने का पूरा प्रयास किया, लेकिन यह अभी तक प्राप्त नहीं हुआ है।
+
+यदि भविष्य में यह दस्तावेज़ मिल जाता है तो मैं इसे संबंधित कार्यालय में जमा कर दूँगा/दूँगी।
+
+मैं यह घोषणा करता/करती हूँ कि उपरोक्त जानकारी मेरे ज्ञान और विश्वास के अनुसार सत्य है।
+
+दिनांक: ___ / ___ / 20__
+
+शपथकर्ता के हस्ताक्षर  
+नाम: ______  
+
+नोटरी द्वारा सत्यापित
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>English Affidavit</h2>
+
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+
+AFFIDAVIT
+
+I, ______ son/daughter of ______ resident of ______ do hereby solemnly affirm and declare that my ______ (name of document) has been lost on ______.
+
+I have made all possible efforts to search for the document but it could not be found.
+
+If the document is found in future, I will immediately submit it to the concerned authority.
+
+The statements made above are true and correct to the best of my knowledge and belief.
+
+Date: ___ / ___ / 20__
+
+Signature of Deponent  
+Name: ______  
+
+Verified before Notary Public
+
+</div>
+
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Copied");
+}
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("Copied");
+}
+
+</script>
+
+</body>
+</html>
