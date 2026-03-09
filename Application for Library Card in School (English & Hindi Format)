@@ -1,0 +1,232 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application for Library Card for Students (English & Hindi Format)</title>
+
+<meta name="description" content="Application for library card for school or college students in English and Hindi. Copy ready format to request a new library card from librarian or principal.">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6f9;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.intro{
+text-align:center;
+color:#444;
+font-size:15px;
+margin-bottom:20px;
+}
+
+.section{
+margin-top:25px;
+}
+
+h2{
+font-size:20px;
+margin-bottom:8px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+margin-bottom:15px;
+cursor:pointer;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+line-height:1.7;
+font-size:15px;
+overflow-wrap:break-word;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.faq{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+margin-top:25px;
+}
+
+.faq h3{
+margin-top:10px;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application for Library Card for Students</h1>
+
+<p class="intro">
+This page provides a simple application for library card for school or college students. 
+Students can copy the English or Hindi format and submit it to the librarian or principal 
+to request a new library card.
+</p>
+
+<div class="section">
+
+<h2>Application for Library Card in English</h2>
+
+<button onclick="copyEnglish()">Copy English Application</button>
+
+<div id="englishText" class="application">
+
+To,
+The Librarian
+[School / College Name]
+[Address]
+
+Subject: Application for Issuing Library Card
+
+Respected Sir/Madam,
+
+I am a student of class [Class/Department] in your institution. I kindly request you to issue me a library card so that I can access the library facilities and borrow books for my studies.
+
+I assure you that I will follow all the library rules and regulations and take proper care of the books issued to me.
+
+Kindly issue my library card at the earliest.
+
+Thank you.
+
+Yours faithfully,
+[Student Name]
+[Class / Roll Number]
+[Section]
+[Contact Number]
+[Date]
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>लाइब्रेरी कार्ड के लिए आवेदन (Hindi Format)</h2>
+
+<button onclick="copyHindi()">Copy Hindi Application</button>
+
+<div id="hindiText" class="application">
+
+सेवा में,
+पुस्तकालयाध्यक्ष
+[विद्यालय / महाविद्यालय का नाम]
+[पता]
+
+विषय: लाइब्रेरी कार्ड जारी करने हेतु आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मैं आपके विद्यालय/महाविद्यालय का छात्र/छात्रा हूँ तथा कक्षा [Class] में अध्ययन कर रहा/रही हूँ। कृपया मुझे लाइब्रेरी कार्ड जारी करने की कृपा करें ताकि मैं पुस्तकालय की सुविधाओं का उपयोग कर सकूँ।
+
+मैं आपको आश्वासन देता/देती हूँ कि पुस्तकालय के सभी नियमों का पालन करूँगा/करूँगी तथा पुस्तकों का सही ढंग से उपयोग करूँगा/करूँगी।
+
+अतः आपसे निवेदन है कि कृपया मुझे लाइब्रेरी कार्ड जारी करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय,
+[छात्र का नाम]
+[कक्षा / रोल नंबर]
+[सेक्शन]
+[मोबाइल नंबर]
+[दिनांक]
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>1. How do I write an application for library card?</h3>
+<p>You should write the application to the librarian or principal requesting the issue of a library card so you can access library books.</p>
+
+<h3>2. Who should submit a library card application?</h3>
+<p>Students who want to borrow books from the school or college library usually submit this application.</p>
+
+<h3>3. Can I copy this application format?</h3>
+<p>Yes, you can copy the format above and submit it in your school or college.</p>
+
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+
+function copyEnglish(){
+navigator.clipboard.writeText(
+document.getElementById("englishText").innerText
+);
+alert("English application copied");
+}
+
+function copyHindi(){
+navigator.clipboard.writeText(
+document.getElementById("hindiText").innerText
+);
+alert("Hindi application copied");
+}
+
+</script>
+
+</body>
+</html>
+```
