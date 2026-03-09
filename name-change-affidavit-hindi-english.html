@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Name Change Affidavit Format (Hindi & English)</title>
+
+<meta name="description" content="Name change affidavit format in Hindi and English. Copy ready affidavit format used for passport, bank, and official name change purposes.">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.7;
+}
+
+.container{
+max-width:850px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.section{
+margin-top:30px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:12px;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+font-size:15px;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Name Change Affidavit</h1>
+
+<div class="application">
+
+A name change affidavit is a sworn declaration stating that a person has changed their name and both the old and new names refer to the same person.  
+It is commonly used for passport applications, bank records, educational documents, and government records.
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Hindi Name Change Affidavit</h2>
+
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+
+शपथ पत्र
+
+मैं ______ पुत्र/पुत्री ______ निवासी ______ यह शपथपूर्वक घोषणा करता/करती हूँ कि मेरा पूर्व नाम ______ था और अब मैंने अपना नाम बदलकर ______ कर लिया है।
+
+आगे से सभी सरकारी एवं निजी अभिलेखों में मेरा नाम ______ ही प्रयोग किया जाएगा।
+
+मैं यह घोषणा करता/करती हूँ कि उपरोक्त दोनों नाम एक ही व्यक्ति के हैं।
+
+यह शपथ पत्र मेरे द्वारा पूर्ण होशोहवास में दिया जा रहा है।
+
+दिनांक: ___ / ___ / 20__
+
+शपथकर्ता के हस्ताक्षर  
+नाम: ______  
+
+नोटरी द्वारा सत्यापित
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>English Name Change Affidavit</h2>
+
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+
+AFFIDAVIT
+
+I, ______ son/daughter of ______ resident of ______ do hereby solemnly affirm and declare that my former name was ______ and I have changed my name to ______.
+
+Hereafter, I shall be known by the name ______ for all purposes including official records.
+
+Both the names refer to the same person.
+
+This affidavit is made to declare the change of my name.
+
+Date: ___ / ___ / 20__
+
+Signature of Deponent  
+Name: ______  
+
+Verified before Notary Public
+
+</div>
+
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Copied");
+}
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("Copied");
+}
+
+</script>
+
+</body>
+</html>
