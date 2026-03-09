@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leave Application for Marriage</title>
+<meta name="description" content="Leave application for marriage in school or college. English and Hindi formats, examples, reasons and FAQs.">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;
+}
+
+.application{
+background:white;padding:18px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;line-height:1.7;font-size:15px;overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Leave Application for Marriage</h1>
+
+<div class="application">
+Students sometimes need leave from school or college to attend a marriage in their family or relatives. Writing a proper leave application helps inform the school authority and request permission formally.
+</div>
+
+<hr>
+
+<div class="section">
+<h2>English Application</h2>
+<button onclick="copyEnglish()">Copy English</button>
+<div id="englishText" class="application">
+To,
+The Principal
+[School Name]
+
+Date: ___ / ___ / 20__
+
+Subject: Leave Application for Marriage
+
+Respected Sir/Madam,
+
+I respectfully inform you that there is a marriage ceremony in my family on [date]. I need to attend this important family event.
+
+Therefore, I kindly request you to grant me leave for ___ day(s).
+
+I will complete my pending work after returning.
+
+Thank you.
+
+Yours obediently,
+Name:
+Class:
+Roll No:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Application</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[विद्यालय का नाम]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: विवाह समारोह के लिए अवकाश आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मेरे परिवार में [तारीख] को विवाह समारोह है। मुझे इस कार्यक्रम में शामिल होना आवश्यक है।
+
+अतः कृपया मुझे ___ दिन का अवकाश प्रदान करने की कृपा करें।
+
+मैं लौटने के बाद अपनी पढ़ाई पूरी कर लूंगा/लूंगी।
+
+धन्यवाद।
+
+भवदीय,
+नाम:
+कक्षा:
+रोल नंबर:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Common Reasons</h2>
+<button onclick="copyExamples()">Copy Reasons</button>
+<div id="examples" class="application">
+Brother's marriage
+Sister's marriage
+Cousin marriage
+Relative wedding ceremony
+Family wedding function
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>FAQ</h2>
+<button onclick="copyFAQ()">Copy FAQ</button>
+<div id="faq" class="application">
+How many days leave can be taken?
+Usually 1–5 days depending on school rules.
+
+Do we need proof?
+Some schools may ask for a wedding invitation.
+
+Can parents write this application?
+Yes, parents can write it for younger students.
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){navigator.clipboard.writeText(document.getElementById("englishText").innerText);alert("English copied");}
+function copyHindi(){navigator.clipboard.writeText(document.getElementById("hindiText").innerText);alert("Hindi copied");}
+function copyExamples(){navigator.clipboard.writeText(document.getElementById("examples").innerText);alert("Copied");}
+function copyFAQ(){navigator.clipboard.writeText(document.getElementById("faq").innerText);alert("Copied");}
+</script>
+
+</body>
+</html>
