@@ -1,0 +1,140 @@
+```html id="7n0if1"
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application for Name Correction</title>
+<meta name="description" content="Name correction application format for school records in Hindi and English. Copy ready format to request correction in name.">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+width:100%;padding:14px;font-size:16px;background:#1976d2;color:white;border:none;border-radius:8px;margin-bottom:15px;cursor:pointer;
+}
+
+.application{
+background:white;padding:18px;border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;line-height:1.7;font-size:15px;
+overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application for Name Correction</h1>
+
+<div class="application">
+अगर स्कूल के रिकॉर्ड या किसी दस्तावेज में आपका नाम गलत दर्ज हो गया है, तो उसे सही करवाने के लिए नीचे दिया गया आवेदन प्रारूप उपयोग किया जा सकता है।
+</div>
+
+<hr>
+
+<div class="section">
+<h2>नाम सुधार के लिए आवेदन (Hindi)</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+
+सेवा में,  
+प्रधानाचार्य महोदय/महोदया  
+[विद्यालय का नाम]
+
+विषय: नाम में सुधार के लिए आवेदन
+
+महोदय/महोदया,
+
+सविनय निवेदन है कि मैं आपके विद्यालय की कक्षा ______ का छात्र/छात्रा हूँ। विद्यालय के रिकॉर्ड में मेरा नाम गलती से गलत दर्ज हो गया है।
+
+विद्यालय के रिकॉर्ड में मेरा नाम: __________  
+सही नाम: __________
+
+अतः आपसे निवेदन है कि कृपया मेरे नाम को विद्यालय के रिकॉर्ड में सही करने की कृपा करें।
+
+इसके लिए मैं आपका आभारी रहूँगा/रहूँगी।
+
+धन्यवाद।
+
+भवदीय  
+नाम:  
+कक्षा:  
+रोल नंबर:  
+दिनांक:  
+
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Name Correction Application (English)</h2>
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+
+To,  
+The Principal  
+[School Name]
+
+Subject: Application for Name Correction
+
+Respected Sir/Madam,
+
+I am a student of class ______ in your school. My name has been incorrectly recorded in the school records.
+
+Incorrect Name: __________  
+Correct Name: __________
+
+Therefore, I kindly request you to correct my name in the school records.
+
+I shall be grateful for your help.
+
+Thank you.
+
+Yours obediently  
+Name:  
+Class:  
+Roll Number:  
+Date:  
+
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Hindi copied");
+}
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("English copied");
+}
+</script>
+
+</body>
+</html>
+```
