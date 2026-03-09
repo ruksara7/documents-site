@@ -1,0 +1,140 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leave Application for College Students</title>
+<meta name="description" content="Leave application for college students in English and Hindi format. Copy ready application to request leave from college.">
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f9;}
+.container{max-width:800px;margin:auto;padding:20px;}
+h1{text-align:center;margin-bottom:10px;}
+.section{margin-top:25px;}
+h2{font-size:20px;margin-bottom:8px;}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+margin-bottom:15px;
+cursor:pointer;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+line-height:1.7;
+font-size:15px;
+overflow-wrap:break-word;
+}
+
+hr{margin:35px 0;border:none;border-top:1px solid #ddd;}
+.back{display:block;text-align:center;margin-top:25px;font-weight:bold;text-decoration:none;}
+
+@media(max-width:600px){
+h1{font-size:20px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Leave Application for College</h1>
+
+<div class="application">
+College students may need leave due to illness, family work, or personal reasons. 
+Use the application format below to request leave from your college authority.
+</div>
+
+<hr>
+
+<div class="section">
+<h2>English Application</h2>
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+To,
+The Principal
+[College Name]
+
+Date: ___ / ___ / 20__
+
+Subject: Leave Application
+
+Respected Sir/Madam,
+
+I am a student of [Course/Year] in your college.
+
+I request you to kindly grant me leave from ___ to ___ due to [reason].
+
+I will attend the classes regularly after the leave period and complete the missed work.
+
+Kindly grant me leave for the above mentioned days.
+
+Thank you.
+
+Yours faithfully,
+Name:
+Course / Year:
+Roll Number:
+</div>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Hindi Application</h2>
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+सेवा में,
+प्रधानाचार्य महोदय/महोदया
+[कॉलेज का नाम]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: अवकाश हेतु आवेदन
+
+महोदय/महोदया,
+
+मैं आपके कॉलेज का [कोर्स/वर्ष] का छात्र/छात्रा हूँ।
+
+मुझे ___ से ___ तक [कारण] के कारण अवकाश की आवश्यकता है।
+
+कृपया मुझे उक्त अवधि के लिए अवकाश प्रदान करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय,
+नाम:
+कोर्स / वर्ष:
+रोल नंबर:
+</div>
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+function copyEnglish(){navigator.clipboard.writeText(document.getElementById("englishText").innerText);alert("English copied");}
+function copyHindi(){navigator.clipboard.writeText(document.getElementById("hindiText").innerText);alert("Hindi copied");}
+</script>
+
+</body>
+</html>
+```
