@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School NOC Letter Format (Hindi & English)</title>
+
+<meta name="description" content="School NOC letter format for student admission or transfer. Copy ready format in Hindi and English.">
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.7;
+}
+
+.container{
+max-width:850px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.section{
+margin-top:30px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:12px;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+font-size:15px;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>School NOC Letter Format</h1>
+
+<div class="application">
+
+A School No Objection Certificate (NOC) is issued by a school stating that it has no objection if a student takes admission or transfers to another school.
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Hindi Format</h2>
+
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="application">
+
+जिसे संबंधित हो
+
+यह प्रमाणित किया जाता है कि छात्र/छात्रा ______ हमारे विद्यालय ______ में कक्षा ______ में अध्ययनरत है।
+
+विद्यालय को इस बात पर कोई आपत्ति नहीं है कि छात्र/छात्रा अन्य विद्यालय में प्रवेश ले।
+
+यह प्रमाण पत्र अभिभावक के अनुरोध पर जारी किया जा रहा है।
+
+दिनांक: ___ / ___ / 20__
+
+प्रधानाचार्य  
+विद्यालय का नाम: ______  
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>English Format</h2>
+
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="application">
+
+To Whom It May Concern
+
+This is to certify that ______ is a student of ______ School studying in class ______.
+
+The school has no objection if the student seeks admission to another school.
+
+This certificate is issued upon request of the parents.
+
+Date: ___ / ___ / 20__
+
+Principal  
+School Name: ______  
+
+</div>
+
+</div>
+
+<a class="back" href="noc-letter-format.html">← Back to NOC Formats</a>
+
+</div>
+
+<script>
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Hindi copied");
+}
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("English copied");
+}
+
+</script>
+
+</body>
+</html>
