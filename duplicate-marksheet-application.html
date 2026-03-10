@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application for Duplicate Marksheet (English & Hindi Format)</title>
+
+<meta name="description" content="Application for duplicate marksheet if your marksheet is lost or damaged. Copy ready English and Hindi formats, purposes, required documents and FAQs for students.">
+
+<style>
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.6;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:10px;
+}
+
+.intro{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.section{
+margin-top:30px;
+}
+
+h2{
+font-size:20px;
+margin-bottom:10px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+margin-bottom:15px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0d5dc0;
+}
+
+.application{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+white-space:pre-wrap;
+font-size:15px;
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:25px;
+font-weight:bold;
+text-decoration:none;
+color:#1976d2;
+}
+
+@media(max-width:600px){
+
+h1{font-size:21px;}
+h2{font-size:17px;}
+.application{font-size:14px;}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application for Duplicate Marksheet</h1>
+
+<div class="intro">
+
+A duplicate marksheet is issued when the original marksheet is lost, damaged, or misplaced.  
+Students can request a duplicate marksheet by submitting an application to the school, college, university, or examination board.
+
+Below are simple **copy-ready application formats in English and Hindi** that students can use when applying for a duplicate marksheet.
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>English Application</h2>
+
+<button onclick="copyEnglish()">Copy English Application</button>
+
+<div id="englishText" class="application">
+
+To,
+The Principal
+[School / College Name]
+
+Date: ___ / ___ / 20__
+
+Subject: Application for Duplicate Marksheet
+
+Respected Sir/Madam,
+
+I am a student of class/course ______ in your institution.
+
+Unfortunately, my original marksheet of the examination held in ______ has been lost / misplaced.
+
+Therefore, I kindly request you to issue me a duplicate marksheet.
+
+I shall be grateful for your kind help.
+
+Thank you.
+
+Yours sincerely
+
+Name:
+Class / Course:
+Roll Number:
+Contact Number:
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Hindi Application</h2>
+
+<button onclick="copyHindi()">Copy Hindi Application</button>
+
+<div id="hindiText" class="application">
+
+सेवा में,  
+प्रधानाचार्य महोदय / महोदया  
+[विद्यालय / कॉलेज का नाम]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: डुप्लीकेट मार्कशीट हेतु आवेदन
+
+महोदय / महोदया,
+
+मैं आपके संस्थान की कक्षा / कोर्स ______ का छात्र / छात्रा हूँ।
+
+मेरी ______ वर्ष की मूल मार्कशीट कहीं खो गई / गुम हो गई है।
+
+अतः आपसे विनम्र निवेदन है कि कृपया मुझे डुप्लीकेट मार्कशीट जारी करने की कृपा करें।
+
+इसके लिए मैं आपका आभारी रहूँगा / रहूँगी।
+
+धन्यवाद।
+
+भवदीय
+
+नाम:  
+कक्षा / कोर्स:  
+रोल नंबर:  
+मोबाइल नंबर:  
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Common Purposes</h2>
+
+<button onclick="copyExamples()">Copy Purposes</button>
+
+<div id="examples" class="application">
+
+Lost marksheet replacement  
+College admission  
+Job application  
+Scholarship application  
+Government form submission  
+Higher education admission  
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Documents Required</h2>
+
+<button onclick="copyDocuments()">Copy Documents</button>
+
+<div id="documents" class="application">
+
+Application letter  
+Aadhar card copy  
+School or college ID card  
+Previous marksheet copy (if available)  
+FIR copy (sometimes required if marksheet is lost)
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="section">
+
+<h2>Frequently Asked Questions</h2>
+
+<button onclick="copyFAQ()">Copy FAQ</button>
+
+<div id="faq" class="application">
+
+Who issues a duplicate marksheet?
+
+The school, college, university, or examination board issues the duplicate marksheet.
+
+Is FIR required for duplicate marksheet?
+
+Some institutions require an FIR if the marksheet is lost.
+
+How long does it take to get a duplicate marksheet?
+
+Usually between 3 to 10 working days depending on the institution.
+
+</div>
+
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+<script>
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("English application copied");
+}
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Hindi application copied");
+}
+
+function copyExamples(){
+navigator.clipboard.writeText(document.getElementById("examples").innerText);
+alert("Copied");
+}
+
+function copyDocuments(){
+navigator.clipboard.writeText(document.getElementById("documents").innerText);
+alert("Copied");
+}
+
+function copyFAQ(){
+navigator.clipboard.writeText(document.getElementById("faq").innerText);
+alert("Copied");
+}
+
+</script>
+
+</body>
+</html>
