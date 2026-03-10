@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application for Bus Pass in School (English & Hindi Format)</title>
+
+<meta name="description" content="Write an application for school bus pass. Copy ready English and Hindi formats for students requesting a bus pass for school transport.">
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f9;
+line-height:1.6;
+}
+
+.container{
+max-width:820px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+}
+
+.intro{
+background:white;
+padding:16px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.section{
+margin-top:30px;
+}
+
+button{
+width:100%;
+padding:14px;
+font-size:16px;
+background:#1976d2;
+color:white;
+border:none;
+border-radius:8px;
+margin-bottom:15px;
+cursor:pointer;
+}
+
+.box{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+white-space:pre-wrap;
+}
+
+ul{
+background:white;
+padding:18px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+hr{
+margin:35px 0;
+border:none;
+border-top:1px solid #ddd;
+}
+
+.related a{
+display:block;
+margin:6px 0;
+color:#1976d2;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Application for Bus Pass in School</h1>
+
+<div class="intro">
+Students who wish to use the school transport service must request a bus pass from the school administration.  
+Below are simple copy-ready application formats in English and Hindi.
+</div>
+
+<hr>
+
+<h2>English Application</h2>
+
+<button onclick="copyEnglish()">Copy English</button>
+
+<div id="englishText" class="box">
+
+To  
+The Principal  
+[School Name]
+
+Date: ___ / ___ / 20__
+
+Subject: Application for School Bus Pass
+
+Respected Sir/Madam,
+
+I am a student of class ______ in your school.
+
+I live at ______ which is far from the school. Therefore, I request you to kindly issue me a school bus pass so that I can travel to school regularly.
+
+I shall be grateful for your help.
+
+Thank you.
+
+Yours sincerely  
+
+Name:  
+Class:  
+Roll Number:  
+
+</div>
+
+<hr>
+
+<h2>Hindi Application</h2>
+
+<button onclick="copyHindi()">Copy Hindi</button>
+
+<div id="hindiText" class="box">
+
+सेवा में,  
+प्रधानाचार्य महोदय / महोदया  
+[विद्यालय का नाम]
+
+दिनांक: ___ / ___ / 20__
+
+विषय: स्कूल बस पास के लिए आवेदन
+
+महोदय / महोदया,
+
+मैं आपके विद्यालय की कक्षा ______ का छात्र / छात्रा हूँ।
+
+मेरा घर विद्यालय से काफी दूर है। इसलिए मैं विद्यालय आने-जाने के लिए स्कूल बस सेवा का उपयोग करना चाहता / चाहती हूँ।
+
+अतः आपसे विनम्र निवेदन है कि कृपया मुझे स्कूल बस पास जारी करने की कृपा करें।
+
+धन्यवाद।
+
+भवदीय  
+
+नाम:  
+कक्षा:  
+रोल नंबर:  
+
+</div>
+
+<hr>
+
+<h2>Quick Tips</h2>
+
+<ul>
+<li>Write your correct class and roll number.</li>
+<li>Mention your residential area clearly.</li>
+<li>Keep the application simple and polite.</li>
+</ul>
+
+<hr>
+
+<h2>Documents Required</h2>
+
+<ul>
+<li>Application letter</li>
+<li>Student ID card</li>
+<li>Address proof if required</li>
+</ul>
+
+<hr>
+
+<div class="related">
+
+<h2>Related Applications</h2>
+
+<a href="duplicate-marksheet-application.html">Application for Duplicate Marksheet</a>
+<a href="migration-certificate-application.html">Migration Certificate Application</a>
+<a href="bonafide-certificate-application.html">Bonafide Certificate Application</a>
+
+</div>
+
+</div>
+
+<script>
+
+function copyEnglish(){
+navigator.clipboard.writeText(document.getElementById("englishText").innerText);
+alert("English copied");
+}
+
+function copyHindi(){
+navigator.clipboard.writeText(document.getElementById("hindiText").innerText);
+alert("Hindi copied");
+}
+
+</script>
+
+</body>
+</html>
